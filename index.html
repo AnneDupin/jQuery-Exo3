@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu|Chewy|Quattrocento+Sans|Kaushan+Script|Comfortaa|Lobster+Two|Raleway|Montserrat|Titillium+Web|Josefin+Sans|Pacifico|Orbitron|Josefin+Slab|Satisfy|Economica|Courgette' rel='stylesheet' type='text/css'>
+        <title>Exo3 - jQuery</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+        @import url('https://fr.allfont.net/allfont.css?fonts=courier');
+
+        h1 {
+            background: rgb(9, 36, 93);
+            margin: 30px;
+            padding: 10px;
+            border: 4px solid #FBB13C;
+            color: #FBB13C;
+            font-size: 35px;
+            text-align: center;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        div {
+            font-family: 'Source Sans Pro', sans-serif;
+            text-transform: uppercase;
+        }
+
+        .dropdown {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercice 3 - jQuery</h1>
+    <h2>Changer le font-family de la div "texte" en "Courier"</h2>
+
+    <div id="font-change">
+        <p>Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste
+            anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut
+            attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé
+            d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir)
+            des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos.
+            Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans
+            les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains
+            manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la
+            querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel
+            Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour
+            de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle
+            entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.</p>
+    </div>
+
+    <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Font
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li id = "courier-font" style = "font-family: Courier"><a href="#">Courier</a></li>
+        <li id = "courgette-font" style = "font-family: Courgette;"><a href="#">Courgette</a></li>
+        <li id = "ubuntu-font" style = "font-family: Ubuntu;"><a href="#">Ubuntu</a></li>
+        <li id = "chewy-font" style = "font-family: Chewy;"><a href="#">Chewy</a></li>
+        <li id = "lobster-two-font" style = "font-family: Lobster Two;"><a href="#">Lobster Two</a></li>
+        <li id = "kaushan-script-font" style = "font-family: Kaushan Script;"><a href="#">Kaushan Script</a></li>
+        <li id = "economica-font" style = "font-family: Economica;"><a href="#">Economica</a></li>
+        <li id = "satisfy-font" style = "font-family: Satisfy;"><a href="#">Satisfy</a></li>
+      </ul>  
+    </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
